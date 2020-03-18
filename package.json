@@ -1,0 +1,141 @@
+{
+	"name": "createvuefile",
+	"displayName": "createVueFile",
+	"description": "LEAVE BLANK",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.43.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:extension.createVueFile"
+	],
+	"main": "./src/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.createVueFile",
+				"title": "新建vue文件"
+			}
+		],
+		"menus": {
+			"explorer/context": [
+        {
+					"when": "resource",
+          "command": "extension.createVueFile",
+          "group": "navigation@2"
+        }
+      ]
+		},
+		"configuration": {
+			"type": "object",
+			"title": "创建vue模板文件",
+			"properties": {
+					"createVueFile.showYourName": {
+							"type": "string",
+							"default": "知名前端退堂鼓艺术表演大师",
+							"description": "你的名字"
+					},
+					"createVueFile.showTip": {
+							"type": "boolean",
+							"default": true,
+							"description": "启动时显示自定义欢迎页"
+					},
+					"createVueFile.showName": {
+						"type": "boolean",
+						"default": true,
+						"description": "是否开启「选项/其他/name」"
+					},
+					"createVueFile.showComponents": {
+						"type": "boolean",
+						"default": true,
+						"description": "是否开启「选项/组件/components」"
+					},
+					"createVueFile.showData": {
+						"type": "boolean",
+						"default": true,
+						"description": "是否开启「选项/数据/data」"
+					},
+					"createVueFile.showProps": {
+						"type": "boolean",
+						"default": true,
+						"description": "是否开启「选项/数据/props」"
+					},
+					"createVueFile.showMethods": {
+						"type": "boolean",
+						"default": true,
+						"description": "是否开启「选项/数据/methods」"
+					},
+					"createVueFile.showWatch": {
+						"type": "boolean",
+						"default": false,
+						"description": "是否开启「选项/数据/watch」"
+					},
+					"createVueFile.showComputed": {
+						"type": "boolean",
+						"default": true,
+						"description": "是否开启「选项/数据/computed」"
+					},
+					"createVueFile.showBeforeCreate": {
+						"type": "boolean",
+						"default": false,
+						"description": "是否开启「选项/生命周期钩子/beforeCreate」"
+					},
+					"createVueFile.showCreated": {
+						"type": "boolean",
+						"default": false,
+						"description": "是否开启「选项/生命周期钩子/created」"
+					},
+					"createVueFile.showBeforeMount": {
+						"type": "boolean",
+						"default": false,
+						"description": "是否开启「选项/生命周期钩子/beforeMount」"
+					},
+					"createVueFile.showMounted": {
+						"type": "boolean",
+						"default": true,
+						"description": "是否开启「选项/生命周期钩子/mounted」"
+					},
+					"createVueFile.showBeforeUpdate": {
+						"type": "boolean",
+						"default": false,
+						"description": "是否开启「选项/生命周期钩子/beforeUpdate」"
+					},
+					"createVueFile.showUpdated": {
+						"type": "boolean",
+						"default": false,
+						"description": "是否开启「选项/生命周期钩子/updated」"
+					},
+					"createVueFile.showBeforeDestroy": {
+						"type": "boolean",
+						"default": false,
+						"description": "是否开启「选项/生命周期钩子/beforeDestroy」"
+					},
+					"createVueFile.showDestroyed": {
+						"type": "boolean",
+						"default": false,
+						"description": "是否开启「选项/生命周期钩子/destroyed」"
+					}
+					
+			}
+		}
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"pretest": "npm run lint",
+		"test": "node ./test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^7.0.1",
+		"@types/node": "^12.11.7",
+		"@types/vscode": "^1.43.0",
+		"eslint": "^6.8.0",
+		"glob": "^7.1.6",
+		"mocha": "^7.0.1",
+		"typescript": "^3.7.5",
+		"vscode-test": "^1.3.0"
+	}
+}
