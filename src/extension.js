@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path');
 
 function getConfig(keys) {
-  return vscode.workspace.getConfiguration().get('createVueFile.' + keys)
+  return vscode.workspace.getConfiguration().get('newVueFile.' + keys)
 }
 
 function getHtml(keys, flag) {
@@ -138,7 +138,7 @@ function creatVueFile(fileName) {
  */
 function activate(context) {
 
-	let disposable = vscode.commands.registerCommand('extension.createVueFile', function (obj) {
+	let disposable = vscode.commands.registerCommand('extension.newVueFile', function (obj) {
 		vscode.window.showInputBox({
 			placeHolder: "请输入.vue文件的名称,",
 			prompt: "按enter将为您创建一个vue模板文件"

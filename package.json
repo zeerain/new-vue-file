@@ -1,6 +1,6 @@
 {
-	"name": "createvuefile",
-	"displayName": "createVueFile",
+	"name": "newVueFile",
+	"displayName": "newVueFile",
 	"description": "LEAVE BLANK",
 	"version": "0.0.1",
 	"engines": {
@@ -10,13 +10,13 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.createVueFile"
+		"onCommand:extension.newVueFile"
 	],
 	"main": "./src/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "extension.createVueFile",
+				"command": "extension.newVueFile",
 				"title": "新建vue文件"
 			}
 		],
@@ -24,7 +24,7 @@
 			"explorer/context": [
         {
 					"when": "resource",
-          "command": "extension.createVueFile",
+          "command": "extension.newVueFile",
           "group": "navigation@2"
         }
       ]
@@ -33,87 +33,87 @@
 			"type": "object",
 			"title": "创建vue模板文件",
 			"properties": {
-					"createVueFile.showYourName": {
+					"newVueFile.showYourName": {
 							"type": "string",
-							"default": "知名前端退堂鼓艺术表演大师",
-							"description": "你的名字"
+							"default": "又是元气满满的一天呀",
+							"description": "yeah!"
 					},
-					"createVueFile.showTip": {
+					"newVueFile.showTip": {
 							"type": "boolean",
 							"default": true,
 							"description": "启动时显示自定义欢迎页"
 					},
-					"createVueFile.showName": {
+					"newVueFile.showName": {
 						"type": "boolean",
 						"default": true,
 						"description": "是否开启「选项/其他/name」"
 					},
-					"createVueFile.showComponents": {
+					"newVueFile.showComponents": {
 						"type": "boolean",
 						"default": true,
 						"description": "是否开启「选项/组件/components」"
 					},
-					"createVueFile.showData": {
+					"newVueFile.showData": {
 						"type": "boolean",
 						"default": true,
 						"description": "是否开启「选项/数据/data」"
 					},
-					"createVueFile.showProps": {
+					"newVueFile.showProps": {
 						"type": "boolean",
 						"default": true,
 						"description": "是否开启「选项/数据/props」"
 					},
-					"createVueFile.showMethods": {
+					"newVueFile.showMethods": {
 						"type": "boolean",
 						"default": true,
 						"description": "是否开启「选项/数据/methods」"
 					},
-					"createVueFile.showWatch": {
+					"newVueFile.showWatch": {
 						"type": "boolean",
 						"default": false,
 						"description": "是否开启「选项/数据/watch」"
 					},
-					"createVueFile.showComputed": {
+					"newVueFile.showComputed": {
 						"type": "boolean",
 						"default": true,
 						"description": "是否开启「选项/数据/computed」"
 					},
-					"createVueFile.showBeforeCreate": {
+					"newVueFile.showBeforeCreate": {
 						"type": "boolean",
 						"default": false,
 						"description": "是否开启「选项/生命周期钩子/beforeCreate」"
 					},
-					"createVueFile.showCreated": {
+					"newVueFile.showCreated": {
 						"type": "boolean",
 						"default": false,
 						"description": "是否开启「选项/生命周期钩子/created」"
 					},
-					"createVueFile.showBeforeMount": {
+					"newVueFile.showBeforeMount": {
 						"type": "boolean",
 						"default": false,
 						"description": "是否开启「选项/生命周期钩子/beforeMount」"
 					},
-					"createVueFile.showMounted": {
+					"newVueFile.showMounted": {
 						"type": "boolean",
 						"default": true,
 						"description": "是否开启「选项/生命周期钩子/mounted」"
 					},
-					"createVueFile.showBeforeUpdate": {
+					"newVueFile.showBeforeUpdate": {
 						"type": "boolean",
 						"default": false,
 						"description": "是否开启「选项/生命周期钩子/beforeUpdate」"
 					},
-					"createVueFile.showUpdated": {
+					"newVueFile.showUpdated": {
 						"type": "boolean",
 						"default": false,
 						"description": "是否开启「选项/生命周期钩子/updated」"
 					},
-					"createVueFile.showBeforeDestroy": {
+					"newVueFile.showBeforeDestroy": {
 						"type": "boolean",
 						"default": false,
 						"description": "是否开启「选项/生命周期钩子/beforeDestroy」"
 					},
-					"createVueFile.showDestroyed": {
+					"newVueFile.showDestroyed": {
 						"type": "boolean",
 						"default": false,
 						"description": "是否开启「选项/生命周期钩子/destroyed」"
