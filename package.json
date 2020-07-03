@@ -1,6 +1,7 @@
 {
 	"name": "newVueFile",
 	"displayName": "newVueFile",
+	"publisher": "zeerain",
 	"description": "LEAVE BLANK",
 	"version": "0.0.1",
 	"engines": {
@@ -13,6 +14,7 @@
 		"onCommand:extension.newVueFile"
 	],
 	"main": "./src/extension.js",
+	"repository": "https://github.com/zeerain/new-vue-file",
 	"contributes": {
 		"commands": [
 			{
