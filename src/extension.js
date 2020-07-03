@@ -108,7 +108,7 @@ function creatVueFile(fileName) {
     ${getHtml('showName', 'name')}${getHtml('showProps', 'props')}${getHtml('showData', 'data')}${getHtml('showComponents', 'components')}${getHtml('showBeforeCreate', 'beforeCreate')}${getHtml('showCreated', 'created')}${getHtml('showBeforeUpdate', 'beforeUpdate')}${getHtml('showUpdated', 'updated')}${getHtml('showBeforeDestroy', 'beforeDestroy')}${getHtml('showDestroyed', 'destroyed')}${getHtml('showMethods', 'methods')}${getHtml('showWatch', 'watch')}${getHtml('showComputed', 'computed')}
   }
 </script>
-<style lang="less" scope>
+<style lang="less" scoped>
 
 </style>`, 
     'utf8',function(error){
