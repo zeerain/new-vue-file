@@ -2,6 +2,8 @@
 
 > you can new a vue file convenient and fast。
 
+> vscode扩展搜索「newVueFile」即可体验。
+
 > 根据自己的需求，自动生成.vue模板文件，免去手工复制的代码的工作量。
 
 ### For more information
